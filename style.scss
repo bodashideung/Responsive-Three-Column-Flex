@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700&family=Cormorant:wght@400;700&family=Fira+Sans:wght@300;400&family=Lexend+Deca&family=Montserrat+Alternates:wght@200;300;400;500;700&family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    /*===Column Color===*/
+    --primary-clr-1:hsl(31, 77%, 52%);
+    --secondary-clr-2:hsl(184, 100%, 22%);
+    --third-clr-3:hsl(179, 100%, 13%);
+
+    /*===Font Color===*/
+    --font-clr-heading:hsl(0, 0%, 95%);
+    --font-clr-pharagrap:hsla(0, 0%, 100%, 0.75);
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/*=====Column Style=====*/
+
+.column{
+    padding: 3rem;
+}
+
+.first-column{
+    background-color: var(--primary-clr-1);
+}
+
+.second-column{
+    background-color: var(--secondary-clr-2);
+}
+
+.third-column{
+    background-color: var(--third-clr-3);
+}
+
+
+/*====Column Items Style====*/
+
+img{
+    margin-bottom: 1.8rem;
+}
+
+h2{
+    color: var(--font-clr-heading);
+    font-family:'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+}
+
+
+p{
+    color: var(--font-clr-pharagrap);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.btn{
+    padding: .8rem 2rem;
+    background-color: var(--font-clr-heading);
+    border: none;
+    border-radius: 50px;
+    text-transform: capitalize;
+    border: 2px solid var(--font-clr-heading);
+    cursor: pointer;
+    transition: .3s ease-in;
+
+    &:hover{
+        background-color: transparent;
+        color: var(--font-clr-heading);
+    }
+}
+
+.btn-1{
+    color: var(--primary-clr-1);
+}
+
+.btn-2{
+    color: var(--secondary-clr-2);
+}
+
+.btn-3{
+    color: var(--third-clr-3);
+}
+
+
+
+
+/*=====Break Point=====*/
+
+@media screen and (min-width: 1024px){
+
+    .wrapper{
+        max-width: 1366px;
+        margin: 0 auto;
+    }
+
+    .container{
+        flex-wrap: nowrap;
+        margin: 3rem auto;
+        width: 75%;
+    }
+
+    p{
+        margin-bottom: 5rem;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-bottom: 2rem;}
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
